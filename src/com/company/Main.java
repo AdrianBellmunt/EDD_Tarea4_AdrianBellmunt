@@ -1,5 +1,12 @@
 package com.company;
 import java.util.Scanner;
+
+/**
+ *  Esta classe muetra los numeros impares entre 1 i el numero dado por el usuario
+ *
+
+ */
+
 public class Main {
     public static void main(String[] args) {
         Scanner teclado=new Scanner(System.in);
@@ -19,7 +26,12 @@ public class Main {
         }
         teclado.close();
     }
-    // Generar números primos de 1 a max
+
+    /** Este metodo generar números primos de 1 a max
+     *
+     * @param max
+     * @return
+     */
     public static int[] generarPrimos (int max)
     {
         int i,j;
