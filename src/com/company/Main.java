@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 
 /**
- *  Esta classe muetra los numeros impares entre 1 i el numero dado por el usuario
+ *  Esta classe muetra los numeros primos entre 1 i el numero dado por el usuario
  *
 
  */
