@@ -4,19 +4,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado=new Scanner(System.in);
         System.out.println("Introduce el número para la criba de Erastótenes:");
-        int dato=teclado.nextInt();
-        int vector[]=new int[dato];
-        System.out.println("\nVector inicial hasta :"+dato);
+        int numero=teclado.nextInt();
+        int vector[]=new int[numero];
+        System.out.println("\nVector inicial hasta :"+numero);
         for (int i = 0; i < vector.length; i++) {
             if (i%10==0) System.out.println();
             System.out.print(i+1+"\t");
         }
-        vector=generarPrimos(dato);
-        System.out.println("\nVector de primos hasta:"+dato);
+        vector=generarPrimos(numero);
+        System.out.println("\nVector de numeros primos hasta:"+numero);
         for (int i = 0; i < vector.length; i++) {
             if (i%10==0) System.out.println();
             System.out.print(vector[i]+"\t");
         }
+        teclado.close();
     }
     // Generar números primos de 1 a max
     public static int[] generarPrimos (int max)
@@ -40,13 +41,13 @@ public class Main {
                 }
             }
             // ¿Cuántos primos hay?
-            int cuenta = 0;
+            int contador = 0;
             for (i=0; i<dim; i++) {
                 if (esPrimo[i])
-                    cuenta++;
+                    contador++;
             }
             // Rellenar el vector de números primos
-            int[] primos = new int[cuenta];
+            int[] primos = new int[contador];
             for (i=0, j=0; i<dim; i++) {
                 if (esPrimo[i])
                     primos[j++] = i;
